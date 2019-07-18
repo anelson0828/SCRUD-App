@@ -1,13 +1,13 @@
 const express = require('express');
 const path = require('path');
-const volleyball = require('volleyball');
+// const volleyball = require('volleyball');
 
 const app = express();
 
 // logging middleware
 // Only use logging middleware when not running tests
-const debug = process.env.NODE_ENV === 'test';
-app.use(volleyball.custom({ debug }));
+// const debug = process.env.NODE_ENV === 'test';
+// app.use(volleyball.custom({ debug }));
 
 // body parsing middleware
 app.use(express.json());
